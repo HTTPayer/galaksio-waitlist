@@ -142,113 +142,113 @@ export default function HomePage() {
                 <div className="absolute -inset-4 rounded-2xl bg-gradient-to-r from-blue-950/10 via-blue-900/10 to-slate-800/10 opacity-75 blur-2xl"></div>
                 
                 {/* Main Card */}
-                <div className="relative rounded-xl border border-zinc-200 bg-white shadow-2xl">
+                <div className="relative rounded-xl border border-zinc-200 bg-white shadow-2xl overflow-hidden">
                   {/* Browser Chrome */}
-                  <div className="flex items-center gap-2 border-b border-zinc-200 px-4 py-3">
+                  <div className="flex items-center gap-2 border-b border-zinc-200 px-3 py-2 sm:px-4 sm:py-3">
                     <div className="flex gap-1.5">
-                      <div className="h-3 w-3 rounded-full bg-red-400"></div>
-                      <div className="h-3 w-3 rounded-full bg-yellow-400"></div>
-                      <div className="h-3 w-3 rounded-full bg-green-400"></div>
+                      <div className="h-2.5 w-2.5 sm:h-3 sm:w-3 rounded-full bg-red-400"></div>
+                      <div className="h-2.5 w-2.5 sm:h-3 sm:w-3 rounded-full bg-yellow-400"></div>
+                      <div className="h-2.5 w-2.5 sm:h-3 sm:w-3 rounded-full bg-green-400"></div>
                     </div>
-                    <div className="ml-4 flex-1 rounded bg-zinc-100 px-3 py-1 text-xs text-zinc-500">
+                    <div className="ml-2 sm:ml-4 flex-1 rounded bg-zinc-100 px-2 sm:px-3 py-1 text-xs text-zinc-500 truncate">
                       galaksio.cloud
                     </div>
                   </div>
 
                   {/* Dashboard Content */}
-                  <div className="flex">
+                  <div className="flex flex-col sm:flex-row">
                     {/* Sidebar */}
-                    <div className="w-48 border-r border-zinc-200 bg-zinc-50 p-4">
-                      <div className="mb-6">
-                        <div className="text-lg font-bold text-blue-950">Galaksio</div>
+                    <div className="w-full sm:w-48 border-b sm:border-b-0 sm:border-r border-zinc-200 bg-zinc-50 p-3 sm:p-4">
+                      <div className="mb-4 sm:mb-6">
+                        <div className="text-base sm:text-lg font-bold text-blue-950">Galaksio</div>
                       </div>
                       <nav className="space-y-1">
                         <div className="text-xs font-semibold text-zinc-500">Navigation</div>
                         <div className="mt-2 space-y-1">
-                          <div className="flex items-center gap-2 rounded px-2 py-1.5 text-sm text-zinc-700">
-                            <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <div className="flex items-center gap-2 rounded px-2 py-1.5 text-xs sm:text-sm text-zinc-700">
+                            <svg className="h-3 w-3 sm:h-4 sm:w-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z" />
                             </svg>
-                            Projects
+                            <span className="truncate">Projects</span>
                           </div>
-                          <div className="flex items-center gap-2 rounded bg-blue-950 px-2 py-1.5 text-sm font-medium text-white">
-                            <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <div className="flex items-center gap-2 rounded bg-blue-950 px-2 py-1.5 text-xs sm:text-sm font-medium text-white">
+                            <svg className="h-3 w-3 sm:h-4 sm:w-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12" />
                             </svg>
-                            Deployments
+                            <span className="truncate">Deployments</span>
                           </div>
-                          <div className="flex items-center gap-2 rounded px-2 py-1.5 text-sm text-zinc-700">
-                            <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <div className="flex items-center gap-2 rounded px-2 py-1.5 text-xs sm:text-sm text-zinc-700">
+                            <svg className="h-3 w-3 sm:h-4 sm:w-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                             </svg>
-                            Activity
+                            <span className="truncate">Activity</span>
                           </div>
                         </div>
                         <div className="mt-4 text-xs font-semibold text-zinc-500">Your teams</div>
                         <div className="mt-2 space-y-1">
-                          <div className="px-2 py-1 text-sm text-zinc-600">Planetario</div>
-                          <div className="px-2 py-1 text-sm text-zinc-600">Protocol</div>
+                          <div className="px-2 py-1 text-xs sm:text-sm text-zinc-600 truncate">Planetario</div>
+                          <div className="px-2 py-1 text-xs sm:text-sm text-zinc-600 truncate">Protocol</div>
                         </div>
                       </nav>
                     </div>
 
                     {/* Main Content */}
-                    <div className="flex-1 p-6">
-                      <div className="mb-4 flex items-center justify-between">
-                        <h2 className="text-lg font-semibold text-zinc-900">Deployments</h2>
+                    <div className="flex-1 p-4 sm:p-6">
+                      <div className="mb-3 sm:mb-4 flex items-center justify-between">
+                        <h2 className="text-base sm:text-lg font-semibold text-zinc-900">Deployments</h2>
                       </div>
-                      <div className="space-y-3">
+                      <div className="space-y-2 sm:space-y-3">
                         {/* Deployment Items */}
-                        <div className="flex items-center justify-between rounded-lg border border-zinc-200 p-3">
-                          <div className="flex items-center gap-3">
-                            <div className="flex h-8 w-8 items-center justify-center rounded bg-zinc-100 text-xs font-bold text-zinc-600">
+                        <div className="flex items-center justify-between rounded-lg border border-zinc-200 p-2.5 sm:p-3">
+                          <div className="flex items-center gap-2 sm:gap-3 min-w-0">
+                            <div className="flex h-7 w-7 sm:h-8 sm:w-8 flex-shrink-0 items-center justify-center rounded bg-zinc-100 text-xs font-bold text-zinc-600">
                               P
                             </div>
-                            <div>
-                              <div className="text-sm font-medium text-zinc-900">Planetario</div>
-                              <div className="text-xs text-zinc-500">Deploy from GitHub</div>
+                            <div className="min-w-0">
+                              <div className="text-xs sm:text-sm font-medium text-zinc-900 truncate">Planetario</div>
+                              <div className="text-xs text-zinc-500 truncate">Deploy from GitHub</div>
                             </div>
                           </div>
-                          <div className="flex items-center gap-2">
-                            <span className="inline-flex items-center gap-1 rounded-full bg-green-100 px-2 py-0.5 text-xs font-medium text-green-700">
+                          <div className="flex items-center gap-2 flex-shrink-0">
+                            <span className="inline-flex items-center gap-1 rounded-full bg-green-100 px-1.5 sm:px-2 py-0.5 text-xs font-medium text-green-700">
                               <div className="h-1.5 w-1.5 rounded-full bg-green-600"></div>
-                              Ready
+                              <span className="hidden sm:inline">Ready</span>
                             </span>
                           </div>
                         </div>
 
-                        <div className="flex items-center justify-between rounded-lg border border-zinc-200 p-3">
-                          <div className="flex items-center gap-3">
-                            <div className="flex h-8 w-8 items-center justify-center rounded bg-zinc-100 text-xs font-bold text-zinc-600">
+                        <div className="flex items-center justify-between rounded-lg border border-zinc-200 p-2.5 sm:p-3">
+                          <div className="flex items-center gap-2 sm:gap-3 min-w-0">
+                            <div className="flex h-7 w-7 sm:h-8 sm:w-8 flex-shrink-0 items-center justify-center rounded bg-zinc-100 text-xs font-bold text-zinc-600">
                               T
                             </div>
-                            <div>
-                              <div className="text-sm font-medium text-zinc-900">Tailwind Labs</div>
-                              <div className="text-xs text-zinc-500">Deploy from GitHub</div>
+                            <div className="min-w-0">
+                              <div className="text-xs sm:text-sm font-medium text-zinc-900 truncate">Tailwind Labs</div>
+                              <div className="text-xs text-zinc-500 truncate">Deploy from GitHub</div>
                             </div>
                           </div>
-                          <div className="flex items-center gap-2">
-                            <span className="inline-flex items-center gap-1 rounded-full bg-amber-100 px-2 py-0.5 text-xs font-medium text-amber-700">
+                          <div className="flex items-center gap-2 flex-shrink-0">
+                            <span className="inline-flex items-center gap-1 rounded-full bg-amber-100 px-1.5 sm:px-2 py-0.5 text-xs font-medium text-amber-700">
                               <div className="h-1.5 w-1.5 animate-pulse rounded-full bg-amber-600"></div>
-                              Building
+                              <span className="hidden sm:inline">Building</span>
                             </span>
                           </div>
                         </div>
 
-                        <div className="flex items-center justify-between rounded-lg border border-zinc-200 p-3">
-                          <div className="flex items-center gap-3">
-                            <div className="flex h-8 w-8 items-center justify-center rounded bg-zinc-100 text-xs font-bold text-zinc-600">
+                        <div className="flex items-center justify-between rounded-lg border border-zinc-200 p-2.5 sm:p-3">
+                          <div className="flex items-center gap-2 sm:gap-3 min-w-0">
+                            <div className="flex h-7 w-7 sm:h-8 sm:w-8 flex-shrink-0 items-center justify-center rounded bg-zinc-100 text-xs font-bold text-zinc-600">
                               P
                             </div>
-                            <div>
-                              <div className="text-sm font-medium text-zinc-900">Protocol</div>
-                              <div className="text-xs text-zinc-500">Deploy from GitHub</div>
+                            <div className="min-w-0">
+                              <div className="text-xs sm:text-sm font-medium text-zinc-900 truncate">Protocol</div>
+                              <div className="text-xs text-zinc-500 truncate">Deploy from GitHub</div>
                             </div>
                           </div>
-                          <div className="flex items-center gap-2">
-                            <span className="inline-flex items-center gap-1 rounded-full bg-red-100 px-2 py-0.5 text-xs font-medium text-red-700">
+                          <div className="flex items-center gap-2 flex-shrink-0">
+                            <span className="inline-flex items-center gap-1 rounded-full bg-red-100 px-1.5 sm:px-2 py-0.5 text-xs font-medium text-red-700">
                               <div className="h-1.5 w-1.5 rounded-full bg-red-600"></div>
-                              Failed
+                              <span className="hidden sm:inline">Failed</span>
                             </span>
                           </div>
                         </div>
@@ -256,6 +256,68 @@ export default function HomePage() {
                     </div>
                   </div>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+       {/* GLUSD Section */}
+      <section className="border-b border-zinc-200 py-24">
+        <div className="mx-auto max-w-7xl px-6">
+          <div className="mx-auto max-w-4xl">
+            <div className="text-center">
+              <h2 className="text-4xl font-bold tracking-tight text-zinc-900 sm:text-5xl">
+                Introducing <span className="bg-gradient-to-r from-blue-950 via-blue-900 to-slate-800 bg-clip-text text-transparent">GLUSD</span>
+              </h2>
+              <p className="mt-6 text-xl leading-8 text-zinc-700">
+                The first yield-bearing stablecoin backed by x402 payments.
+              </p>
+            </div>
+
+            <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+              <div className="rounded-xl border border-zinc-200 bg-white p-6 text-center">
+                <div className="mx-auto mb-3 flex h-12 w-12 items-center justify-center rounded-lg bg-blue-100">
+                  <svg className="h-6 w-6 text-blue-950" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                  </svg>
+                </div>
+                <h3 className="font-semibold text-zinc-900">Fully onchain</h3>
+              </div>
+              <div className="rounded-xl border border-zinc-200 bg-white p-6 text-center">
+                <div className="mx-auto mb-3 flex h-12 w-12 items-center justify-center rounded-lg bg-violet-100">
+                  <svg className="h-6 w-6 text-violet-950" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
+                  </svg>
+                </div>
+                <h3 className="font-semibold text-zinc-900">Auditable by design</h3>
+              </div>
+              <div className="rounded-xl border border-zinc-200 bg-white p-6 text-center">
+                <div className="mx-auto mb-3 flex h-12 w-12 items-center justify-center rounded-lg bg-emerald-100">
+                  <svg className="h-6 w-6 text-emerald-950" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                  </svg>
+                </div>
+                <h3 className="font-semibold text-zinc-900">Powered by real utility</h3>
+              </div>
+              <div className="rounded-xl border border-zinc-200 bg-white p-6 text-center">
+                <div className="mx-auto mb-3 flex h-12 w-12 items-center justify-center rounded-lg bg-amber-100">
+                  <svg className="h-6 w-6 text-amber-950" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z" />
+                  </svg>
+                </div>
+                <h3 className="font-semibold text-zinc-900">Not speculation</h3>
+              </div>
+            </div>
+
+            <div className="mt-12 rounded-2xl border border-zinc-200 bg-gradient-to-br from-slate-50 to-blue-50 p-8 sm:p-12">
+              <div className="mx-auto max-w-3xl">
+                <p className="text-lg leading-relaxed text-zinc-700">
+                  <span className="font-semibold text-zinc-900">GLUSD</span> is a non-rebasing yield-bearing stablecoin which can be minted with and redeemed for USDC. A portion of x402 revenues generated by Galaksio are automatically deposited into the GLUSD vault, meaning the value of 1 GLUSD will increase over time.
+                </p>
+                <p className="mt-4 text-lg leading-relaxed text-zinc-700">
+                  Think of <span className="font-semibold">sDAI</span>, but with yield coming from user requests for cloud compute or storage through Galaksio.
+                </p>
               </div>
             </div>
           </div>
