@@ -48,7 +48,7 @@ export async function POST(request: NextRequest) {
     await kv.sadd("waitlist:emails", email.toLowerCase());
     
     // Store full entry details
-    await kv.hset(`waitlist:entry:${email.toLowerCase()}`, newEntry as Record<string, unknown>);
+    await kv.hset(`waitlist:entry:${email.toLowerCase()}`, newEntry as unknown as Record<string, unknown>);
     
     // Increment counter
     await kv.incr("waitlist:count");
@@ -78,7 +78,7 @@ export async function GET() {
     // Get details for each email
     const entries = await Promise.all(
       emails.map(async (email) => {
-        const entry = await kv.hgetall(`waitlist:entry:${email}`) as WaitlistEntry;
+        const entry = await kv.hgetall(`waitlist:entry:${email}`) as unknown as WaitlistEntry;
         return {
           email: entry.email,
           timestamp: entry.timestamp,
