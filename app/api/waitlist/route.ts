@@ -48,7 +48,7 @@ export async function POST(request: NextRequest) {
     await kv.sadd("waitlist:emails", email.toLowerCase());
     
     // Store full entry details
-    await kv.hset(`waitlist:entry:${email.toLowerCase()}`, newEntry);
+    await kv.hset(`waitlist:entry:${email.toLowerCase()}`, newEntry as Record<string, unknown>);
     
     // Increment counter
     await kv.incr("waitlist:count");
