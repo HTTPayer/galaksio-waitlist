@@ -130,7 +130,7 @@ export default function HomePage() {
                   </div>
                 )}
                 <p className="mt-3 text-sm text-zinc-500">
-                  Join <span className="font-semibold text-zinc-700">1,000+</span> developers waiting for early access.
+                  Join builders waiting for early access to Galaksio.
                 </p>
               </div>
             </div>
